@@ -2,13 +2,13 @@
 
   const char ssid_router[] = "al_momento_no";   // al momento non arriva il segnale
   const char pass_router[] = "al_momento_no";   // al momento non arriva il segnale
-  const char ssid_AP[]     = "Orto_Smart_AP";   // nome della rete dell'orto in AP
-  const char pass_AP[]     = "123456";          // pwd rete in AP (metti una + difficile poi !!!!)
+  const char ssid_AP[]     = "*************";   // nome della rete dell'orto in AP
+  const char pass_AP[]     = "*********";       // pwd rete in AP (metti una + difficile poi !!!!)
 
   // --- IMPOSTAZIONI IP FISSO PER ROUTER (station STA) ---
-  IPAddress sta_IP(192, 168, 1, 247);      // IP fisso che vuoi dare ad Arduino
+  IPAddress sta_IP(192, 168, 1, 200);      // IP fisso che vuoi dare ad Arduino - vedi anche router
   IPAddress sta_gateway(192, 168, 1, 1);   // IP del tuo router di casa
-  IPAddress sta_subnet(255, 255, 255, 0);  // Subnet mask standard
+  IPAddress sta_subnet(255, 255, 255, 0);  // Subnet mask (standard)
   IPAddress sta_dns(192, 168, 1, 1);       // Server DNS (pari al router)
 
   // --- IMPOSTAZIONI PER L'ACCESS POINT (AP) ---
